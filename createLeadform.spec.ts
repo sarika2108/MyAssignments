@@ -28,13 +28,8 @@ await page.locator('#createLeadForm_personalTitle').fill('test')
 await page.locator('#createLeadForm_generalProfTitle').fill('test')
 await page.locator('#createLeadForm_annualRevenue').fill('10000')
 await page.locator('#createLeadForm_departmentName').fill('testing')
-//dropdown select option
-// await page.locator('').selectOption('')
-// await page.selectOption('dropdownloc', 'value')
 
 await page.locator('select[name="dataSourceId"]').selectOption({label:'Cold Call'})
-//  await page.locator('select[name="dataSourceId"]').selectOption({value:'Cold Call'} 
-    // await page.locator('select[name="dataSourceId"]').selectOption({index:0} )
 
     const dropdownindex=page.locator('select[name="dataSourceId"]>option')
     const dropdowncount = await dropdownindex.count()
