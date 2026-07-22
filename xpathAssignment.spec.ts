@@ -34,24 +34,4 @@ test('launchSalesforce', async({page})=>{
     await page.locator("//button[@name='SaveEdit']").click()
     
 
-
-
-
-    
-
-
-
-    
-    
-    
-    
-//(//div[contains(text(),'New')])[2]
-
-    
-    
-
-
-    
-
-
 })
